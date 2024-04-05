@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="page">
+    <header>
+      <h3>Batalha da Aldeia Oito Anos</h3>
+    </header>
+
+    <form id="my- bform" ac>
+      <fieldset>
+        <legend>
+          <h1>Preencha o formulário para se inscrever:</h1>
+        </legend>
+
+        <div class="input-container">
+          <label for="nome">Nome: <span>(mínimo 4 caracteres)</span></label>
+          <input id="nome" type="name" required minlength="4">
+        </div>
+
+        <div class="input-container">
+          <label for="numero">Número de celular: <span>(somente números)</span></label>
+          <input id="numero" type="tel" required >
+        </div>
+
+        <div class="input-container">
+          <label for="email">Email: <span>(digite um email válido)</span></label>
+          <input id="email" type="email" required>
+        </div>
+
+        <div class="input-container">
+          <label for="senha">Senha: <span>(mínimo 8 caracteres)</span></label>
+          <input id="senha" type="password" required minlength="8">
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+
+        <div class="input-container">
+          <label for="event-category">Categoria: </label>
+          <select id="event-category" class="select-form">
+            <option value="Solo">Solo</option>
+            <option value="Dupla">Dupla</option>
+            <option value="Trio">Trio</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <div class="input-wrapper">
+            <legend>Dia e Hora</legend>
+
+            <div class="col-3">
+              <div class="input-container">
+                <label for="event-date">Data:</label>
+                <input type="date" id="event-date">
+              </div>
+
+              <div class="input-container">
+                <label for="event-begin">Das:</label>
+                <input type="time" id="event-end">
+              </div>
+
+              <div class="input-container">
+                <label for="event-begin">Até:</label>
+                <input type="time" id="event-end">
+              </div>
+
+      </fieldset>
+
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="event-confirm">
+        <label for="event-confirm">Confirmação</label>
+      </div>
+
+  </div>
+  <footer>
+    <button class="button">Enviar</button>
+  </footer>
+  </form>
+</body>
+      
+</html>
